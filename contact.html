@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+	<link href="Ass2R.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div id="container">
+	<div id="Nav">
+		<img src="spice1.jpg" width="90px;" height="80px;">
+			<a href="home.html"><span>Home<span></a>
+		<a href="Menu.html"><span>Menu</span></a>
+		<a href="Ass2.html"><span>Reveiws</span></a>
+		<a href="Form.html"><span>Reservations</span></a>
+		<a href="contact.html"><span>Contact Us</span></a>
+		<h1 id="Heading">Contact</h1>
+		<img src="spice2.jpg" width="90px;" height="80px;" id="imgright"> 
+	</div>
+	<div id="Main">
+			<input type="text" placeholder="First Name" id="name"><br>
+			<input type="text" placeholder="Surname" id="sname"><br>
+				<select>
+					  <option>Genral enquiries</option>
+					  <option>Private Bookings</option>
+					  <option >Allerges info</option>
+					  <option>Other</option>
+				</select><br>
+			<input type="text" placeholder="Email" id="Ema"><br>
+			<textarea placeholder="Enter Query here. . ." id="ta"></textarea>
+			<button onclick="sub();">Submit</button>
+	</div>
+	<div id="Sec"></div>
+		<script>
+				function sub()
+			{
+			var name = document.getElementById("name");
+			var sname = document.getElementById("sname");
+			var Ema = document.getElementById("Ema");
+			if(name.value == "") //if name is left blank
+			{
+			document.getElementById("Sec").innerHTML="Name field is Required"; //this error will occur
+			return false;
+			}
+			if(sname.value == "") //if surname is left blank
+			{
+			document.getElementById("Sec").innerHTML="Surname is Required"; //this error will occur
+			return false;
+			}
+			if(Ema.value == "") //if Email is left blank
+			{
+			document.getElementById("Sec").innerHTML="Email field is Required"; //this error will occur
+			return false;
+			}
+			{
+			document.getElementById("Sec").innerHTML="Dear " + name.value + " " + sname.value + " your enquiry has been sent, we will try to respond within 48 Hours to " + Ema.value + ", Spicy Leaf Team";
+			}
+			}
+		</script>
+	
+	<div id="Sec4">
+		<p><span>Spicy Leaf</span><br>Call us on &#128222 07394 304 678<br>
+		Contact us via  &#128231 spicyleaf@gmail.com or follow us on social media</p> <!--if the image is clicked it opens the URL in a new tab-->      <!--If the user hovers over the image it turn black and white instead of coloured-->
+		<a href="https://www.facebook.com/" target="_blank"><img src ="facebook.png" class="social" alt="Facebook" 
+		onmouseover="this.src='fb.png';"
+		onmouseout="this.src='facebook.png';"></a>
+		 
+		<a href="https://www.instagram.com/" target="_blank"><img src ="instagram.png" class="social" alt="Instagram"
+		onmouseover="this.src='ib.png';"
+		onmouseout="this.src='instagram.png';"></a>
+
+		<a href="https://www.snapchat.com/" target="_blank"><img src="snapchat.png" class="social" alt="Snapchat"
+		onmouseover="this.src='sb.png';"
+		onmouseout="this.src='snapchat.png';"></a>
+
+		<a href="https://www.twitter.com/" target="_blank"><img src ="twitter.png" class="social" alt="Twitter"
+		onmouseover="this.src='tb.png';"
+		onmouseout="this.src='twitter.png';"></a>
+	</div>
+	</div>
+	</body>
+</html>

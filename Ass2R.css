@@ -1,0 +1,92 @@
+#container {
+height: 100%;
+width: 100%;
+}
+#Nav {
+position: relative;
+background-color: white;
+height: 12%;
+width: 98%;
+padding: 10px;
+margin: 5px;
+}
+#Nav a {
+color: black;
+text-decoration: none;
+}
+#Nav a:hover {
+background-color: orange;
+text-decoration: none;
+}
+#Nav a:active {
+background-color: yellow;
+text-decoration: none;
+}
+#imgright {
+float: right;
+}
+#Heading {
+position: absolute;
+left:50%;
+right:50%;
+top:10px;
+}
+#Main {
+float: left;
+background-color: white;
+height: 82%;
+width: 63%;
+padding: 10px;
+margin: 5px;
+}
+.Sec {
+float: right;
+height: 18%;
+width: 32%;
+background-color: #E6221E;
+padding: 10px;
+margin: 5px;
+line-height: 1.6; /* this makes the fonts line spacing bigger so it is easier to read*/
+}
+#Sec {
+float: right;
+height: 10%;
+width: 10%;
+font-family: bold;
+}
+#Sec2 p { 
+float:left;
+height: 10%;
+width: 98%;
+background-color: #E6221E;
+margin-bottom: 20px;
+padding: 10px;
+line-height: 1.6; 
+}
+#Sec4 p {
+float: left; /* used for the contact page*/
+bottom: 0;
+height: 10%;
+width: 98%;
+background-color: #E6221E;
+margin-bottom: 20px;
+padding: 10px;
+line-height: 1.6; 
+}
+.social {
+float: left;
+height: 60px;
+width: 50px;
+margin-right: 50px;
+margin-top: 10px;
+}
+#Sec5 { /*this is used for the postcode and address on the reservations page*/
+position: absolute;
+top: 400px;
+right: 2px;
+width: 20%;
+height: 40%;
+}
+span {
+font-weight: bold;
+}
